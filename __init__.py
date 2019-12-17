@@ -65,7 +65,7 @@ def enableMacro(short, function):
 
 def printx(*args, **kwargs):
     tToPrint = ""
-    regex = re.compile(r"<((?:\:[A-Za-z0-9_]+)+)[ \t]+'([^\:]*)'>")
+    regex = re.compile(r"<((?:\:[A-Za-z0-9_]+)+)[ \t]+'([^>]*)'>")
     regex2 = re.compile(r"<((?:\:[A-Za-z0-9_]+)+)>")
 
     def replacer(match):
